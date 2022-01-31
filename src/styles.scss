@@ -1,14 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import '~animate.css/animate.min';
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
 
 @font-face {
-    font-family: "Breattogis";
-    src: url("assets/fonts/Breattogis.otf");
+    font-family: "Montez";
+    src: url("assets/fonts/Montez-Regular.ttf");
   }
   
   @font-face {
     font-family: "deRotterdamDemo Regular";
     src: url("assets/fonts/deRotterdamDemo-Regular.otf");
+  }
+
+  @font-face {
+    font-family: "Breattogis";
+    src: url("assets/fonts/Breattogis.otf");
   }
   
   :root {
@@ -16,8 +23,9 @@
     --color-secondary: #D8A9ED;
     --color-tertiary: #666666;
     --color-background: #f2f2f2;
-    --font-breattogis: "Breattogis", sans-serif;
     --font-robotoMedium: "deRotterdamDemo Regular", sans-serif;
+    --font-montez: "Montez", sans-serif;
+    --font-breattogis: "Breattogis", sans-serif;
     --font-smaller: 12px;
     --font-small: 14px;
     --font-normal: 16px;
@@ -26,7 +34,7 @@
     --font-xl: 22px;
     --font-xxl: 30px;
     --font-xxxl: 38px;
-    --font-jumbo: 48px;
+    --font-jumbo: 55px;
   }
   
   body {

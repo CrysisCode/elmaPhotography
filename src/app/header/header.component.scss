@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+
+  & .container-fluid {
+    position: relative;
+
+    & .wave {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    & .wave svg {
+      position: relative;
+      display: block;
+      width: calc(209% + 1.3px);
+      height: 339px;
+      transform: rotateY(180deg);
+    }
+
+    & .wave {
+      & .shape-fill {
+        fill: var(--color-secondary);
+      }
+    }
+
+    & .title {
+      position: relative;
+      font-size: var(--font-jumbo);
+      font-family: var(--font-montez);
+      color: var(--color-primary);
+      padding-top: 12vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+  .header {
+
+    & .container {
+
+      & .title {
+        font-size: var(--font-xxl);
+        line-height: 1.5em;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .header {
+
+    & .container-fluid {
+
+      & .wave svg {
+        width: calc(236% + 1.3px);
+        height: 175px;
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+
+  .header {
+
+    & .container-fluid {
+
+      .wave svg {
+        width: calc(261% + 1.3px);
+        height: 120px;
+      }
+    }
+  }
+}
