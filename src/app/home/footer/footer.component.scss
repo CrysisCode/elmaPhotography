@@ -1,0 +1,18 @@
+.footer {
+    background-color: var(--color-background);
+    color: var(--color-secondary);
+    font-family: var(--font-montez);
+    font-size: var(--font-xl);
+    z-index: -1;
+
+    & .copyright {
+        color: var(--color-primary);
+        background-color: var(--color-background);
+    }
+
+    & .designer {
+        color: var(--color-primary);
+        font-size: var(--font-normal);
+    }
+}
+

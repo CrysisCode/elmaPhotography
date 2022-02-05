@@ -2,6 +2,7 @@
   position: relative;
   height:82vh;
 
+
   & .rectangle {
       width:80px;
       height:100vh;
@@ -204,4 +205,57 @@ input[type="file"] {
   font-family: var(--font-montez);
   font-size: var(--font-xl);
   color: #fff;
+}
+
+@media only screen and (max-width: 640px) {
+  .sidebar {
+    height: 65vh;
+    & .rectangle {
+      top: -39.5%;
+      width: 10%;
+      height: 103vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    } 
+
+    & .socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      top: 10vh;
+    }
+
+    & svg {
+      width: 2rem;
+      top: -10vh;
+  }
+
+  & .offcanvas {
+    width: 100%;
+
+    & .offcanvas-title {
+      top: 2vh;
+      border-bottom: #ccc 1px solid;
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      & svg {
+        width: 15rem;
+        top: -2%;
+      }
+    }
+
+    & .socials-2 {
+
+      & svg {
+        top: 5vh;
+      }
+    }
+  }
+}
+
 }
