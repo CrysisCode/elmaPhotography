@@ -10,7 +10,6 @@ import { PortretiComponent } from './categories/portreti/portreti.component';
 import { PrirodaComponent } from './categories/priroda/priroda.component';
 import { VjencanjaComponent } from './categories/vjencanja/vjencanja.component';
 import { HomeComponent } from './home/home.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },

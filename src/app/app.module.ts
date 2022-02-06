@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './home/footer/footer.component';
-import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
 import { HeaderComponent } from './home/header/header.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { VjencanjaComponent } from './categories/vjencanja/vjencanja.component';
@@ -26,7 +25,6 @@ import { BlogComponent } from './blog/blog.component';
     HomeComponent,
     SidebarComponent,
     FooterComponent,
-    MobileHeaderComponent,
     HeaderComponent,
     CategoriesComponent,
     VjencanjaComponent,
