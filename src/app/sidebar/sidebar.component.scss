@@ -287,6 +287,7 @@ input[type="file"] {
 
   & .offcanvas {
     width: 100%;
+    text-align: center;
 
     & .offcanvas-title {
       top: 2vh;
@@ -302,10 +303,22 @@ input[type="file"] {
       }
     }
 
+    & .about {
+      margin-top: -5vh;
+    }
+
     & .socials-2 {
+
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content:space-around;
+      width: 50%;
+      margin-left: 25%;
 
       & svg {
         top: 5vh;
+        width: 5rem;
       }
     }
   }
