@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './home/footer/footer.component';
@@ -17,6 +19,7 @@ import { OstaloComponent } from './categories/ostalo/ostalo.component';
 import { GallerySelectorComponent } from './categories/gallery-selector/gallery-selector.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { BlogComponent } from './blog/blog.component';
+import { HomeButtonComponent } from './home-button/home-button.component';
 
 
 @NgModule({
@@ -36,11 +39,16 @@ import { BlogComponent } from './blog/blog.component';
     GallerySelectorComponent,
     NavigatorComponent,
     BlogComponent,
+    HomeButtonComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
