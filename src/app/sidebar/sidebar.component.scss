@@ -5,7 +5,7 @@
 
   & .rectangle {
       width:80px;
-      height:100vh;
+      height:104vh;
       top:-14.1vh;
       background-color: var(--color-primary);
       position: relative;
@@ -213,7 +213,7 @@ input[type="file"] {
     & .rectangle {
       top: -39.5%;
       width: 10%;
-      height: 104vh;
+      height: 111vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -406,5 +406,20 @@ input[type="file"] {
 
     }
     }
+  }
+}
+
+@media only screen and ( min-width: 1024px ) and (max-width: 1366px) {
+  .sidebar {
+
+    & .rectangle {
+      top: -32%;
+      width: 6%;
+      height: 110vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    } 
   }
 }
