@@ -20,6 +20,9 @@ import { GallerySelectorComponent } from './categories/gallery-selector/gallery-
 import { NavigatorComponent } from './navigator/navigator.component';
 import { BlogComponent } from './blog/blog.component';
 import { HomeButtonComponent } from './home-button/home-button.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
 
 
 @NgModule({
@@ -47,7 +50,9 @@ import { HomeButtonComponent } from './home-button/home-button.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
     
   ],
   providers: [],
