@@ -4,6 +4,7 @@
     font-family: var(--font-montez);
     font-size: var(--font-xl);
     z-index: -1;
+    overflow: visible;
 
     & .copyright {
         color: var(--color-primary);
@@ -14,5 +15,31 @@
         color: var(--color-primary);
         font-size: var(--font-normal);
     }
+
+    
 }
+
+.divider {
+
+    text-align: center;
+    margin-top: -10vh;
+
+
+    & ng-container {
+        text-align: center;
+        
+    }
+
+    & .logout {
+        font-family: var(--font-montez);
+        font-size: var(--font-xxl);
+        color: var(--color-primary);
+
+        & mat-icon {
+            padding-left: 10px;
+        }
+    }
+}
+
+
 

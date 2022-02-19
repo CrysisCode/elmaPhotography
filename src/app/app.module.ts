@@ -23,6 +23,12 @@ import { HomeButtonComponent } from './home-button/home-button.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
+import { HotToastModule } from '@ngneat/hot-toast';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -43,6 +49,7 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
     NavigatorComponent,
     BlogComponent,
     HomeButtonComponent,
+    LoginFormComponent,
     
   ],
   imports: [
@@ -51,8 +58,13 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
+    HotToastModule.forRoot(),
     
   ],
   providers: [],

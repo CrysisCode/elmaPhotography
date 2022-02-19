@@ -10,10 +10,12 @@ import { PortretiComponent } from './categories/portreti/portreti.component';
 import { PrirodaComponent } from './categories/priroda/priroda.component';
 import { VjencanjaComponent } from './categories/vjencanja/vjencanja.component';
 import { HomeComponent } from './home/home.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', pathMatch: 'full', redirectTo: '/home' },
+  { path: 'login', component: LoginFormComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'categories', component: CategoriesComponent,
     children: [

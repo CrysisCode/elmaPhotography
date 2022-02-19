@@ -1,9 +1,17 @@
-<div class="footer fixed-bottom">
-  <div class="container animate__animated animate__fadeInUp">
-    <div class="row text-center">
-      <div class="copyright col">
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> Elma Photography</p>
+<div class="divider mb-5">
+  <ng-container *ngIf="authService.currentUser$ | async as user">
+    <button mat-button routerLink="/home" (click)="logout()">
+      <div class="logout d-flex justify-content-center align-items-center">Odloguj se <mat-icon>logout</mat-icon></div>
+    </button>
+  </ng-container>
+  </div>
+  <div class="footer fixed-bottom">
+    <div class="container animate__animated animate__fadeInUp text-center">
+      <div class="row text-center">
+        <div class="copyright col">
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Elma Photography</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  

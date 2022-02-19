@@ -1,0 +1,36 @@
+<div class="login-form">
+
+    <div class="container title text-center display-6 px-5">If you are admin of this website please login :)</div>
+    
+    <div class="btn login mb-5 container text-center" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        Login
+      </div>
+    
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title container" id="exampleModalLabel"><div class="display-5">Elma Photography</div></div>
+              <div type="button" class="text-reset" data-bs-dismiss="modal" aria-label="Close"><i class="material-icons"><span class="material-icons-outlined">close</span></i></div>
+            </div>
+            <div class="modal-body">
+              <form [formGroup]="loginForm" (ngSubmit)="submit()">
+                <mat-form-field>
+                <input matInput formControlName="email" placeholder="Korisničko ime" required>
+                <mat-error *ngIf="email?.errors?.['required']">Upišite korisničko ime!</mat-error>
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput formControlName="password" placeholder="Lozinka" required>
+                <mat-error *ngIf="password?.errors?.['required']">Upišite lozinku!</mat-error>
+              </mat-form-field>
+                <button mat-raised-button color="primary" type="submit" data-bs-dismiss="modal">Login</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
